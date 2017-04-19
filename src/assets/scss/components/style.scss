@@ -1,22 +1,61 @@
-header {
-  position: absolute;
-  background-image: url(../img/header.jpg);
+body, html {
   width: 100%;
-  height: 100%;
+  overflow-x: hidden;
+}
+h3 {
+  font: 700 26px/1 'PT Serif', serif;
+}
+h5 {
+  font: 700 16px/24px 'PT Serif', serif;
+  color: #ff6633;
+}
+h6 {
+  color: #fff;
+  font: 400 13px/21px 'PT Sans', sans-serif;
+}
+.orange-button {
+  width: 160px;
+  height: 50px;
+  background-color: #ff6633;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font: 700 13px/24px 'PT Sans', sans-serif;
+}
+.orange-button:hover {
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+  transition: box-shadow 0.2s ease-in-out;
+}
+header {
+  position: relative;
+  background-image: url(../img/header.jpg);
+  background-size: cover;
+  width: 100%;
+  height: auto;
 }
 .content-wrapper {
   max-width: 940px;
   margin: auto;
 }
+.content-wrapper2 {
+  max-width: 1300px;
+  margin: auto;
+}
+.orange-text {
+  color: #ff6633;
+}
 .head-block {
   .logo {
     color: #ff5c2e;
     font: 700 36px/1 'PT Serif', serif;
-    position: absolute;
+    position: relative;
     top: 40px;
   }
   .menu {
     ul {
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
       position: relative;
       top: 45px;
       float: right;
@@ -25,6 +64,9 @@ header {
       display: inline-block;
       color: #fff;
       padding: 0 12px 0 12px;
+    }
+    li:nth-child(5) h4 {
+      color: #ff6633;
     }
     h4 {
       font: 700 14px/24px 'PT Serif', serif;
@@ -42,21 +84,22 @@ header {
       color: #fff;
       font: 700 52px/1 'PT Serif', serif;
     }
-    h3 {
+    h2 {
       color: #fff;
       font: 400 36px/1 'PT Serif', serif;
       display: inline-block;
       position: relative;
       top: 20px;
     }
-    h3:nth-child(2) {
+    h2:nth-child(2) {
       text-decoration: underline;
       padding-left: 10px;
     }
   }
   .buttons {
+    display: inline-block;
     position: relative;
-    top: 75px;
+    padding-top: 75px;
     left: 50%;
     transform: translate(-50%);
     button {
@@ -64,14 +107,401 @@ header {
       width: 160px;
       height: 50px;
       border-radius: 4px;
+      cursor: pointer;
+      font: 700 13px/24px 'PT Sans', sans-serif;
     }
-    button:nth-child(1) {
+    a {
+      display: inline-block;
+      margin: 0 auto;
+    }
+    a:nth-child(1) button {
       background: #ff6633;
-      margin-right: 10px;
+      margin: 0 10px 20px 10px;
     }
-    button:nth-child(2) {
-      margin-left: 10px;
+    a:nth-child(2) button {
+      margin: 0 10px;
       background: rgba(0, 0, 0, 0.75);
     }
   }
+  .scroll-for-details {
+    p {
+      font: 400 14px/18px 'PT Sans', sans-serif;
+      text-align: center;
+      padding-top: 210px;
+      margin-bottom: 0;
+      color: #fff;
+    }
+    .fa {
+      color: #fff;
+      position: relative;
+      display: inline-block;
+      left: 50%;
+      transform: translate(-50%);
+      padding: 10px 0 30px;
+    }
+  }
 }
+.about-voila {
+  background: #f7f7f7;
+  .about-text {
+    padding-top: 160px;
+    padding-left: 195px;
+    h3 {
+      text-align: center;
+      padding-bottom: 30px;
+    }
+    p {
+      font: 400 16px/24px 'PT Sans', sans-serif;
+    }
+    p:nth-child(3) {
+      padding-bottom: 20px;
+    }
+    button {
+      margin-bottom: 120px;
+      position: relative;
+    }
+  }
+  .img1 {
+    //position: absolute;
+    //left: 50%;
+    //width: 635px;
+    //height: 493px;
+    //display: block;
+    //overflow: hidden;
+    padding-top: 120px;
+  }
+  .img2 {
+    position: relative;
+    //left: 180px;
+  }
+  .img3 {
+    position: relative;
+    max-width: 305px;
+  }
+  .img4 {
+    max-width: 260px;
+    //max-height: 225px;
+
+  }
+  .img3, .img4 {
+    //display: flex;
+    align-self: flex-end;
+
+  }
+  .img-row2 {
+    position: relative;
+    top: -90px;
+    justify-content: flex-end;
+  }
+}
+.tasteful {
+  padding: 120px 0 120px;
+  .photos-row1 {
+    padding-bottom: 15px;
+  }
+  .photos-row2 {
+    padding-top: 15px;
+  }
+  .tasteful-text {
+    margin-bottom: 10px;
+  }
+  h3 {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .last-p {
+    padding-bottom: 30px;
+  }
+}
+.reservation-and-events {
+  background: #f7f7f7;
+  text-align: center;
+  h3 {
+    padding-top: 80px;
+    font-size: 22px;
+  }
+  .reservation-and-events2 {
+    justify-content: space-around;
+    .reservation {
+      background: #fff;
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+      margin: 120px 0 120px;
+      h3 {
+        margin-bottom: 45px;
+      }
+      input {
+        display: inline-block;
+        margin: 10px auto;
+        background: #fafafa;
+        max-width: 310px;
+        border: 1px solid #e5e4e4;
+        border-radius: 2px;
+        font: 400 14px/24px 'Lato', sans-serif;
+        box-shadow: none;
+      }
+      input:focus {
+        background: #fff;
+        box-shadow: 0 0 3px #cacaca;
+        transition: box-shadow 0.2s ease-in-out;
+        border: 1px solid #bcbcbc;
+      }
+      .black-button {
+        margin: 30px 0 120px;
+        color: #fff;
+        background: #000;
+        width: 100%;
+        max-width: 310px;
+        height: 50px;
+        border-radius: 4px;
+        font: 700 14px/1 'PT Sans', sans-serif;
+      }
+    }
+    .events {
+      background: #fff;
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+      margin: 120px 0 120px;
+      h3 {
+        margin-bottom: 45px;
+      }
+      .music,
+      .festival,
+      .show {
+        text-align: left;
+        margin-bottom: 40px;
+      }
+      .orange-text {
+        font-style: italic;
+      }
+      .music-head,
+      .festival-head,
+      .show-head {
+        position: relative;
+        left: -5px;
+        .date-and-time {
+          margin-bottom: 10px;
+        }
+        .date, .time {
+          display: inline-block;
+          font: 700 12px/1 'PT Sans', sans-serif;
+          margin-bottom: 0;
+          img {
+            position: relative;
+            padding-right: 5px;
+            top: -3px;
+          }
+          width: 100px;
+        }
+      }
+      .emblem img {
+        position: relative;
+        left: 5px;
+      }
+      h5 {
+        line-height: 1;
+      }
+      p {
+        font: 400 14px/20px 'PT Sans', sans-serif;
+      }
+    }
+  }
+}
+.order-and-advice-inner {
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  h3 {
+    padding: 115px 0 30px;
+  }
+  p {
+    padding-bottom: 25px;
+    font: 400 16px/24px 'PT Sans', sans-serif;
+  }
+  .order button {
+    margin-bottom: 120px;
+  }
+  .divider {
+    img {
+      height: 80px;
+    }
+    p {
+      color: #9a9999;
+      padding: 15px 0 15px;
+      margin: 0;
+      font: 400 24px/1 'Lato', sans-serif;
+    }
+  }
+  .advice {
+    button {
+      width: 60px;
+      height: 20px;
+      color: #fff;
+      border-radius: 3px;
+      margin: 0 5px 0 5px;
+      font: 400 11px/1 'PT Sans', sans-serif;
+      cursor: pointer;
+    }
+    button:nth-child(3) {
+      background: #3e59a5;
+      .fa {
+        color: #fff;
+        position: relative;
+        left: -5px;
+      }
+    }
+    button:nth-child(4) {
+      background: #1b95e0;
+      margin-bottom: 50px;
+      .fa {
+        position: relative;
+        left: -5px;
+      }
+    }
+  }
+}
+.footer-block {
+  justify-content: space-around;
+  background: #000;
+  padding-bottom: 60px;
+  .logo2 {
+    padding-top: 55px;
+  }
+  .logo3 {
+    color: #ff5c2e;
+    font: 700 36px/1 'PT Serif', serif;
+  }
+  h5 {
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  .navigation {
+    padding-top: 55px;
+  }
+  .visit-us {
+    padding-top: 55px;
+  }
+  .visit-us {
+    p {
+      font: 400 14px/21px 'PT Sans', sans-serif;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+    h5:nth-child(3) {
+      margin-bottom: 30px;
+    }
+    .fa {
+      color: #fff;
+      margin-bottom: 15px;
+    }
+    .fa-facebook,
+    .fa-twitter,
+    .fa-instagram,
+    .fa-tripadvisor {
+      margin-right: 30px;
+    }
+  }
+}
+
+
+
+
+@media screen and (max-width: 1130px) {
+  .about-voila {
+    .about-text {
+      padding-left: 120px;
+    }
+  }
+}
+@media screen and (max-width: 940px) {
+  .about-voila {
+    .about-row1 {
+      align-items: center;
+      .about-img1 {
+        position: relative;
+        top: -40px;
+      }
+    }
+    .about-text {
+      padding-left: 15px;
+    }
+    .img-row2 {
+      justify-content: space-around;
+    }
+  }
+}
+@media screen and (min-width: 640px) {
+  .reservation,
+  .events {
+    flex-basis: 45%;
+    max-width: 45%;
+  }
+  //.order-and-advice {
+  //  .order {
+  //    //padding-left: 70px;
+  //    margin-right: -70px;
+  //  }
+  //  .advice {
+  //    padding-right: 70px;
+  //  }
+  //}
+}
+@media screen and (max-width: 365px) {
+  .head-block {
+    .buttons {
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: 640px) {
+  .about-voila {
+    padding-bottom: 120px;
+    .about-text {
+      button {
+        margin-bottom: 0;
+      }
+    }
+    .img1 {
+      padding-top: 0;
+      display: none;
+    }
+    .img-row2 {
+      top: 50px;
+    }
+  }
+  .tasteful {
+    justify-content: center;
+    .tasteful-photos {
+      order: 1;
+      padding-top: 70px;
+      text-align: center;
+    }
+    .tasteful-cuisine {
+      max-width: 90%;
+    }
+  }
+  .reservation-and-events {
+    .reservation-and-events2 {
+      .reservation {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .order-and-advice {
+    padding-bottom: 40px;
+    h3 {
+      padding: 90px 0 15px;
+    }
+    p {
+      padding-bottom: 15px;
+    }
+    .order button {
+      margin-bottom: 0;
+    }
+    .divider {
+      display: none;
+    }
+  }
+  .footer-block {
+    text-align: center;
+  }
+}
+
