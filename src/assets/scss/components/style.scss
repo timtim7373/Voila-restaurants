@@ -1,49 +1,3 @@
-body, html {
-  width: 100%;
-  overflow-x: hidden;
-}
-h3 {
-  font: 700 26px/1 'PT Serif', serif;
-}
-h5 {
-  font: 700 16px/24px 'PT Serif', serif;
-  color: #ff6633;
-}
-h6 {
-  color: #fff;
-  font: 400 13px/21px 'PT Sans', sans-serif;
-}
-.orange-button {
-  width: 160px;
-  height: 50px;
-  background-color: #ff6633;
-  color: #fff;
-  border-radius: 4px;
-  cursor: pointer;
-  font: 700 13px/24px 'PT Sans', sans-serif;
-}
-.orange-button:hover {
-  box-shadow: 0 0 5px rgb(0, 0, 0);
-  transition: box-shadow 0.2s ease-in-out;
-}
-header {
-  position: relative;
-  background-image: url(../img/header.jpg);
-  background-size: cover;
-  width: 100%;
-  height: auto;
-}
-.content-wrapper {
-  max-width: 940px;
-  margin: auto;
-}
-.content-wrapper2 {
-  max-width: 1300px;
-  margin: auto;
-}
-.orange-text {
-  color: #ff6633;
-}
 .head-block {
   .logo {
     color: #ff5c2e;
@@ -52,13 +6,11 @@ header {
     top: 40px;
   }
   .menu {
+    padding-top: 45px;
     ul {
       display: flex;
       justify-content: flex-end;
       flex-wrap: wrap;
-      position: relative;
-      top: 45px;
-      float: right;
     }
     li {
       display: inline-block;
@@ -69,6 +21,7 @@ header {
       color: #ff6633;
     }
     h4 {
+      color: #fff;
       font: 700 14px/24px 'PT Serif', serif;
     }
     p {
@@ -110,15 +63,15 @@ header {
       cursor: pointer;
       font: 700 13px/24px 'PT Sans', sans-serif;
     }
-    a {
+    span {
       display: inline-block;
       margin: 0 auto;
     }
-    a:nth-child(1) button {
+    span:nth-child(1) button {
       background: #ff6633;
       margin: 0 10px 20px 10px;
     }
-    a:nth-child(2) button {
+    span:nth-child(2) button {
       margin: 0 10px;
       background: rgba(0, 0, 0, 0.75);
     }
@@ -162,17 +115,10 @@ header {
     }
   }
   .img1 {
-    //position: absolute;
-    //left: 50%;
-    //width: 635px;
-    //height: 493px;
-    //display: block;
-    //overflow: hidden;
     padding-top: 120px;
   }
   .img2 {
     position: relative;
-    //left: 180px;
   }
   .img3 {
     position: relative;
@@ -180,11 +126,9 @@ header {
   }
   .img4 {
     max-width: 260px;
-    //max-height: 225px;
 
   }
   .img3, .img4 {
-    //display: flex;
     align-self: flex-end;
 
   }
@@ -216,6 +160,7 @@ header {
 .reservation-and-events {
   background: #f7f7f7;
   text-align: center;
+  padding: 120px 0 120px;
   h3 {
     padding-top: 80px;
     font-size: 22px;
@@ -225,7 +170,6 @@ header {
     .reservation {
       background: #fff;
       box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-      margin: 120px 0 120px;
       h3 {
         margin-bottom: 45px;
       }
@@ -254,12 +198,12 @@ header {
         height: 50px;
         border-radius: 4px;
         font: 700 14px/1 'PT Sans', sans-serif;
+        cursor: pointer;
       }
     }
     .events {
       background: #fff;
       box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-      margin: 120px 0 120px;
       h3 {
         margin-bottom: 45px;
       }
@@ -400,108 +344,3 @@ header {
     }
   }
 }
-
-
-
-
-@media screen and (max-width: 1130px) {
-  .about-voila {
-    .about-text {
-      padding-left: 120px;
-    }
-  }
-}
-@media screen and (max-width: 940px) {
-  .about-voila {
-    .about-row1 {
-      align-items: center;
-      .about-img1 {
-        position: relative;
-        top: -40px;
-      }
-    }
-    .about-text {
-      padding-left: 15px;
-    }
-    .img-row2 {
-      justify-content: space-around;
-    }
-  }
-}
-@media screen and (min-width: 640px) {
-  .reservation,
-  .events {
-    flex-basis: 45%;
-    max-width: 45%;
-  }
-  //.order-and-advice {
-  //  .order {
-  //    //padding-left: 70px;
-  //    margin-right: -70px;
-  //  }
-  //  .advice {
-  //    padding-right: 70px;
-  //  }
-  //}
-}
-@media screen and (max-width: 365px) {
-  .head-block {
-    .buttons {
-      text-align: center;
-    }
-  }
-}
-@media screen and (max-width: 640px) {
-  .about-voila {
-    padding-bottom: 120px;
-    .about-text {
-      button {
-        margin-bottom: 0;
-      }
-    }
-    .img1 {
-      padding-top: 0;
-      display: none;
-    }
-    .img-row2 {
-      top: 50px;
-    }
-  }
-  .tasteful {
-    justify-content: center;
-    .tasteful-photos {
-      order: 1;
-      padding-top: 70px;
-      text-align: center;
-    }
-    .tasteful-cuisine {
-      max-width: 90%;
-    }
-  }
-  .reservation-and-events {
-    .reservation-and-events2 {
-      .reservation {
-        margin-bottom: 0;
-      }
-    }
-  }
-  .order-and-advice {
-    padding-bottom: 40px;
-    h3 {
-      padding: 90px 0 15px;
-    }
-    p {
-      padding-bottom: 15px;
-    }
-    .order button {
-      margin-bottom: 0;
-    }
-    .divider {
-      display: none;
-    }
-  }
-  .footer-block {
-    text-align: center;
-  }
-}
-

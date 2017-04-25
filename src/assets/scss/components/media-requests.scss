@@ -1,0 +1,91 @@
+@media screen and (max-width: 1130px) {
+  .about-voila {
+    .about-text {
+      padding-left: 120px;
+    }
+  }
+}
+@media screen and (max-width: 940px) {
+  .about-voila {
+    .about-row1 {
+      align-items: center;
+      .about-img1 {
+        position: relative;
+        top: -40px;
+      }
+    }
+    .about-text {
+      padding-left: 15px;
+    }
+    .img-row2 {
+      justify-content: space-around;
+    }
+  }
+}
+@media screen and (min-width: 640px) {
+  .reservation,
+  .events {
+    flex-basis: 45%;
+    max-width: 45%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .head-block {
+    .buttons {
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: 640px) {
+  .about-voila {
+    padding-bottom: 120px;
+    .about-text {
+      button {
+        margin-bottom: 0;
+      }
+    }
+    .img1 {
+      padding-top: 0;
+      display: none;
+    }
+    .img-row2 {
+      top: 50px;
+    }
+  }
+  .tasteful {
+    justify-content: center;
+    .tasteful-photos {
+      order: 1;
+      padding-top: 70px;
+      text-align: center;
+    }
+    .tasteful-cuisine {
+      max-width: 90%;
+    }
+  }
+  .reservation-and-events {
+    .reservation-and-events2 {
+      .reservation {
+        margin-bottom: 120px;
+      }
+    }
+  }
+  .order-and-advice {
+    padding-bottom: 40px;
+    h3 {
+      padding: 90px 0 15px;
+    }
+    p {
+      padding-bottom: 15px;
+    }
+    .order button {
+      margin-bottom: 0;
+    }
+    .divider {
+      display: none;
+    }
+  }
+  .footer-block {
+    text-align: center;
+  }
+}
