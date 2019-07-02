@@ -1,7 +1,8 @@
 {{!-- This is the base layout for your project, and will be used on every page. --}}
 
 <!doctype html>
-<html class="no-js" lang="en">
+<html ng-app="voilaRest" lang="en">
+<!--<html ng-app="voilaRest" class="no-js" lang="en">-->
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -12,15 +13,20 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <!--<script src="{{root}}assets/js/vendor/angular-sanitize.min.js"></script>-->
   </head>
   <body>
 
     {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
     {{> body}}
 
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>-->
+    <!--<script src="../../src/assets/js/vendor/angular-sanitize.min.js"></script>-->
     <script src="https://use.fontawesome.com/8f277c2e1a.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <script src="{{root}}assets/js/app.js"></script>
+    <script src="{{root}}assets/js/controllers/headerController.js"></script>
   </body>
 </html>

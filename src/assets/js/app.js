@@ -1,5 +1,6 @@
 $(document).foundation();
 
+
 // $(document).ready(function () {
 //     $('.img-row2').slick({
 //         infinite: true,
@@ -9,3 +10,8 @@ $(document).foundation();
 //     });
 // });
 // $('head-block').css({"position":"relative", "top":"200px"});
+// (function () {
+//     "use strict";
+//
+//     var voilaRest = angular.module('voilaRest', []);
+// })();
